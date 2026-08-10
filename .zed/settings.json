@@ -1,0 +1,69 @@
+{
+	"hard_tabs": true,
+	"format_on_save": "on",
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"lint": {
+					"suggestCanonicalClasses": "ignore"
+				}
+			}
+		},
+		"vscode-css-language-server": {
+			"settings": {
+				"css": {
+					"lint": {
+						"unknownAtRules": "ignore"
+					}
+				}
+			}
+		}
+	},
+	"languages": {
+		"Svelte": {
+			"language_servers": ["biome", "!eslint", "!prettier", "..."],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"HTML": {
+			"language_servers": ["biome", "!eslint", "!prettier", "..."],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"TypeScript": {
+			"language_servers": ["biome", "!eslint", "!prettier", "..."],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"JSON": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"JSONC": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"CSS": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		}
+	}
+}

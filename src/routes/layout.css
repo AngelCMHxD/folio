@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@layer base, utils, components;
+@import "@webtui/css/base.css";
+@import "@webtui/css/utils/box.css";
+@import "@webtui/css/components/button.css";
+@import "@webtui/css/components/typography.css";
+
+@import "@webtui/theme-catppuccin";
+@import "@catppuccin/tailwindcss/macchiato.css";
+@import "@fontsource/jetbrains-mono";
+@import "@webtui/plugin-nf";
+
+@theme {
+	--font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
+	--font-mono: "JetBrains Mono", monospace, "Symbols Nerd Font";
+}
