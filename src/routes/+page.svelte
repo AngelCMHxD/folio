@@ -13,16 +13,16 @@ import { goto } from "$app/navigation";
 		</h1>
 
 		<p class="text-lg leading-relaxed mb-8">
-			A beginner software developer.
+			A <strong>beginner</strong> software developer.
 		</p>
 
 		<p class="text-lg leading-relaxed">Known languages:</p>
 		<ul class="pl-5 mb-8">
-			<li> TypeScript</li>
-			<li> JavaScript</li>
-			<li>󰌛 C#</li>
-			<li> Java</li>
-			<li> Python</li>
+			<li class="text-ctp-blue"> TypeScript</li>
+			<li class="text-ctp-yellow"> JavaScript</li>
+			<li class="text-ctp-green">󰌛 C#</li>
+			<li class="text-ctp-red"> Java</li>
+			<li class="text-ctp-blue"> Python</li>
 		</ul>
 
 		<nav class="flex flex-col gap-4 mb-12">
