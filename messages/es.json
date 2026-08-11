@@ -4,5 +4,7 @@
 	"intro": "Un {#strong}desarrollador{/strong} de software principiante.",
 	"languages_known": "Lenguajes de programación que conozco:",
 	"projects": "proyectos",
-	"contact": "contacto"
+	"contact": "contacto",
+	"how_to_contact": "Cómo contactarme?",
+	"contact_text": "Mandame un MD a Discord! Mi username es {#code}{username}{/code}, y (casi siempre) estoy libre!{#space/}Solo dime que me conoces de mis repos en GitHub, sino podría pensar que es spam ;P"
 }

@@ -1,5 +1,7 @@
 <script>
 import { goto } from "$app/navigation";
+import { m } from "$lib/paraglide/messages";
+import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 </script>
 
 <div
@@ -10,19 +12,27 @@ import { goto } from "$app/navigation";
 	<div class="p-8">
 		<h1 class="text-2xl font-normal mb-2">
 			{">"}
-			How to contact me?
+			{m.how_to_contact()}
 		</h1>
 
 		<div class="w-full" is-="separator" variant-="background1"></div>
 
 		<div class="mb-8">
 			<p class="text-ctp-text break-normal">
-				Just send me a DM on Discord! My username is
-				<code>@angelcmhxd</code>, and I'm always happy to chat!
-				<br>
-				<br>
-				Make sure to tell me you know me from my GitHub repos, otherwise
-				I might think it's spam ;P
+				<ParaglideMessage
+					message={m.contact_text}
+					inputs={{
+					username: "@angelcmhxd"
+				}}
+				>
+					{#snippet code({ children })}
+						<code> {@render children?.()} </code>
+					{/snippet}
+					{#snippet space()}
+						<br>
+						<br>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</div>
 
