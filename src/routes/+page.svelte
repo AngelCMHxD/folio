@@ -39,7 +39,7 @@ import { goto } from "$app/navigation";
 				onclick={() => goto('/projects')}
 			>
 				{"$"}
-				cd ./projects
+				cd projects
 			</button>
 			<button
 				type="button"
@@ -48,7 +48,7 @@ import { goto } from "$app/navigation";
 				onclick={() => goto('/contact')}
 			>
 				{"$"}
-				cd ./contact
+				cd contact
 			</button>
 		</nav>
 
