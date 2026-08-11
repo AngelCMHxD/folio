@@ -4,7 +4,7 @@ import { page } from "$app/state";
 import type { Pathname } from "$app/types";
 import { locales, localizeHref } from "$lib/paraglide/runtime";
 import "./layout.css";
-import favicon from "$lib/assets/favicon.svg";
+import favicon from "$lib/assets/favicon.png";
 
 let { children } = $props();
 </script>
