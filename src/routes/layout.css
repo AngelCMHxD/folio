@@ -13,4 +13,12 @@
 @theme {
 	--font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
 	--font-mono: "JetBrains Mono", monospace, "Symbols Nerd Font";
+
+	--animate-blink: blink 1s infinite step-start;
+
+	@keyframes blink {
+		50% {
+			opacity: 0;
+		}
+	}
 }

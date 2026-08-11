@@ -53,9 +53,11 @@ import { goto } from "$app/navigation";
 		</nav>
 
 		<div class="text-lg">
-			<span class="text-ctp-green">guest@portfolio</span>:~$
+			<span class="text-ctp-teal">~</span>
+			<br>
+			<span class="text-ctp-green">-></span>
 			<span
-				class="animate-pulse inline-block w-2.5 h-5 bg-ctp-text align-middle"
+				class="animate-blink inline-block w-1 h-5 bg-ctp-text align-middle"
 			></span>
 		</div>
 	</div>
