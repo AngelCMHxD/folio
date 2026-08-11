@@ -1,5 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"lang": "Lenguaje",
+	"locale": "Español",
 	"hello": "Hola! Soy {#style}{name}{/style}.",
 	"intro": "Un {#strong}desarrollador{/strong} de software principiante.",
 	"languages_known": "Lenguajes de programación que conozco:",

@@ -2,11 +2,16 @@
 import { goto } from "$app/navigation";
 import { m } from "$lib/paraglide/messages";
 import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
+import LocaleSwitcher from "$lib/components/locale-switcher.svelte";
 </script>
 <div
 	class="max-w-3xl mx-auto mt-30 border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
 >
-	<div class="bg-ctp-surface1 px-4 py-1 font-bold">~/portfolio</div>
+	<div class="flex bg-ctp-surface1 px-4 py-1 font-bold justify-between">
+		<span>~/portfolio</span>
+
+		<LocaleSwitcher />
+	</div>
 
 	<div class="p-8">
 		<h1 class="text-2xl font-normal mb-4">
