@@ -1,5 +1,7 @@
 <script>
 import { goto } from "$app/navigation";
+import { m } from "$lib/paraglide/messages";
+import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 </script>
 
 <div
@@ -10,7 +12,7 @@ import { goto } from "$app/navigation";
 	<div class="p-8">
 		<h1 class="text-2xl font-normal mb-2">
 			{">"}
-			These are some of my projects.
+			{m.projects_sub()}
 		</h1>
 
 		<div class="w-full" is-="separator" variant-="background1"></div>
@@ -29,7 +31,7 @@ import { goto } from "$app/navigation";
 				</a>
 			</h2>
 			<p class="text-ctp-text break-normal">
-				A real-time dashboard/viewer for your PM2 processes
+				{m.project1_desc()}
 			</p>
 		</div>
 
@@ -47,8 +49,7 @@ import { goto } from "$app/navigation";
 				</a>
 			</h2>
 			<p class="text-ctp-text break-normal">
-				Real-time chess API with challenges request, matches,
-				friendships and more
+				{m.project2_desc()}
 			</p>
 		</div>
 
@@ -64,16 +65,17 @@ import { goto } from "$app/navigation";
 				</a>
 			</h2>
 			<p class="text-ctp-text break-normal">
-				A small TUI to skip using the kinda sluggish Epic Games
-				Launcher, by running
-				<a
-					href="https://github.com/legendary-gl/legendary"
-					class="hover:underline"
-					target="_blank"
-					rel="noopener noreferrer"
-					>legendary</a
-				>
-				commands for you
+				<ParaglideMessage message={m.project3_desc}>
+					{#snippet link({ children })}
+						<a
+							href="https://github.com/legendary-gl/legendary"
+							class="hover:underline"
+							target="_blank"
+							rel="noopener noreferrer"
+							>{@render children?.()}</a
+						>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</div>
 
