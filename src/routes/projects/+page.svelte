@@ -1,8 +1,8 @@
 <script>
+import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 import { goto } from "$app/navigation";
 import LocaleSwitcher from "$lib/components/locale-switcher.svelte";
 import { m } from "$lib/paraglide/messages";
-import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 </script>
 
 <div

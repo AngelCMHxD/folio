@@ -1,8 +1,8 @@
 <script>
-import { goto } from "$app/navigation";
-import { m } from "$lib/paraglide/messages";
 import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
+import { goto } from "$app/navigation";
 import LocaleSwitcher from "$lib/components/locale-switcher.svelte";
+import { m } from "$lib/paraglide/messages";
 </script>
 <div
 	class="max-w-3xl mx-auto mt-30 border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
