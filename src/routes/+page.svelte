@@ -1,5 +1,7 @@
 <script>
 import { goto } from "$app/navigation";
+import { m } from "$lib/paraglide/messages";
+import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 </script>
 <div
 	class="max-w-3xl mx-auto mt-30 border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
@@ -9,7 +11,13 @@ import { goto } from "$app/navigation";
 	<div class="p-8">
 		<h1 class="text-2xl font-normal mb-4">
 			{">"}
-			Hello, I'm <span class="text-ctp-green font-bold">Angel</span>.
+			<ParaglideMessage message={m.hello} inputs={{ name: "Angel" }}>
+				{#snippet style({ children })}
+					<span class="text-ctp-green font-bold"
+						>{@render children?.()}</span
+					>
+				{/snippet}
+			</ParaglideMessage>
 		</h1>
 
 		<img
@@ -18,11 +26,13 @@ import { goto } from "$app/navigation";
 			class="mb-1"
 		>
 
-		<p class="text-lg leading-relaxed mb-8">
-			A <strong>beginner</strong> software developer.
-		</p>
+		<ParaglideMessage message={m.intro} inputs={{}}>
+			{#snippet strong({ children })}
+				<strong> {@render children?.()} </strong>
+			{/snippet}
+		</ParaglideMessage>
 
-		<p class="text-lg leading-relaxed">Known languages:</p>
+		<p class="text-lg leading-relaxed mt-8">{m.languages_known()}</p>
 		<ul class="pl-5 mb-8">
 			<li class="text-ctp-blue"> TypeScript</li>
 			<li class="text-ctp-yellow"> JavaScript</li>
@@ -39,7 +49,7 @@ import { goto } from "$app/navigation";
 				onclick={() => goto('/projects')}
 			>
 				{"$"}
-				cd projects
+				cd {m.projects()}
 			</button>
 			<button
 				type="button"
@@ -48,7 +58,7 @@ import { goto } from "$app/navigation";
 				onclick={() => goto('/contact')}
 			>
 				{"$"}
-				cd contact
+				cd {m.contact()}
 			</button>
 		</nav>
 

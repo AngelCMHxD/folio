@@ -1,4 +1,8 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"hello": "Hello! I'm {#style}{name}{/style}.",
+	"intro": "A {#strong}beginner{/strong} software developer.",
+	"languages_known": "Programming languages I know:",
+	"projects": "projects",
+	"contact": "contact"
 }
