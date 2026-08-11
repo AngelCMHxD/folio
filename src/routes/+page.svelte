@@ -22,11 +22,13 @@ import { m } from "$lib/paraglide/messages";
 		class="mb-1"
 	>
 
-	<ParaglideMessage message={m.intro} inputs={{}}>
-		{#snippet strong({ children })}
-			<strong> {@render children?.()} </strong>
-		{/snippet}
-	</ParaglideMessage>
+	<div class="text-lg">
+		<ParaglideMessage message={m.intro} inputs={{}}>
+			{#snippet strong({ children })}
+				<strong> {@render children?.()} </strong>
+			{/snippet}
+		</ParaglideMessage>
+	</div>
 
 	<p class="text-lg leading-relaxed mt-8">{m.languages_known()}</p>
 	<ul class="pl-5 mb-8">
