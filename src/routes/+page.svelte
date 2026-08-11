@@ -12,6 +12,12 @@ import { goto } from "$app/navigation";
 			Hello, I'm <span class="text-ctp-green font-bold">Angel</span>.
 		</h1>
 
+		<img
+			src="https://avatars.githubusercontent.com/u/57822483"
+			alt="my avatar"
+			class="mb-1"
+		>
+
 		<p class="text-lg leading-relaxed mb-8">
 			A <strong>beginner</strong> software developer.
 		</p>
