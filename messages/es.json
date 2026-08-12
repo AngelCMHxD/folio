@@ -1,10 +1,10 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"lang": "Lenguaje",
+	"lang": "Idioma",
 	"locale": "Español",
 	"hello": "Hola! Soy {#style}{name}{/style}.",
 	"intro": "Un {#strong}desarrollador{/strong} de software principiante.",
-	"languages_known": "Lenguajes de programación que conozco:",
+	"languages_known": "Lenguajes de programación que he probado:",
 	"projects": "proyectos",
 	"projects_sub": "Estos son algunos de mis proyectos.",
 	"project1_desc": "Un dashboard en tiempo real para los procesos que tengas en PM2",
@@ -12,6 +12,6 @@
 	"project3_desc": "Una TUI para evitar usar el (un poco lento) Epic Games Launcher, ejecutando los comandos de {#link}legendary{/link} por ti",
 	"contact": "contacto",
 	"how_to_contact": "Cómo contactarme?",
-	"contact_text": "Mandame un MD a Discord! Mi username es {#code}{username}{/code}, y (casi siempre) estoy libre!{#space/}Solo dime que me conoces de mis repos en GitHub, sino podría pensar que es spam ;P",
+	"contact_text": "Mandame un MD a Discord! Mi username es {#code}{username}{/code}, y (casi siempre) estoy libre!{#space/}Solo dime que me conoces de mis proyectos en GitHub, sino podría pensar que es spam ;P",
 	"readme": "README.md [En inglés]"
 }

@@ -4,7 +4,7 @@
 	"locale": "English",
 	"hello": "Hello! I'm {#style}{name}{/style}.",
 	"intro": "A {#strong}beginner{/strong} software developer.",
-	"languages_known": "Programming languages I know:",
+	"languages_known": "Programming languages I've tried:",
 	"projects": "projects",
 	"projects_sub": "These are some of my projects.",
 	"project1_desc": "A real-time dashboard/viewer for your PM2 processes",
@@ -12,6 +12,6 @@
 	"project3_desc": "A small TUI to skip using the kinda sluggish Epic Games Launcher, by running {#link}legendary{/link} commands for you",
 	"contact": "contact",
 	"how_to_contact": "How to contact me?",
-	"contact_text": "Just send me a DM on Discord! My username is {#code}{username}{/code}, and I'm always happy to chat!{#space/}Make sure to tell me you know me from my GitHub repos, otherwise I might think it's spam ;P",
+	"contact_text": "Just send me a DM on Discord! My username is {#code}{username}{/code}, and I'm always happy to chat!{#space/}Make sure to tell me you know me from my GitHub projects, otherwise I might think it's spam ;P",
 	"readme": "README.md"
 }
