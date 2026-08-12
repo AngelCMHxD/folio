@@ -30,7 +30,7 @@ import { m } from "$lib/paraglide/messages";
 		class="mb-1"
 	>
 
-	<div class="text-lg">
+	<div class="text-lg break-normal">
 		<ParaglideMessage message={m.intro} inputs={{}}>
 			{#snippet strong({ children })}
 				<strong> {@render children?.()} </strong>

@@ -3,7 +3,7 @@
 	"lang": "Language",
 	"locale": "English",
 	"hello": "Hello! I'm {#style}{name}{/style}.",
-	"intro": "A {#strong}beginner{/strong} software developer.",
+	"intro": "Computer Science {#strong}student{/strong} and aspiring full-stack developer. Building cool and {#strong}open-source{/strong} things on the internet, take a look! :D",
 	"languages_known": "Programming languages I've tried:",
 	"projects": "projects",
 	"projects_sub": "These are some of my projects.",
