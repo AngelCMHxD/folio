@@ -24,7 +24,12 @@ $effect(() => {
 </script>
 
 <div class="p-8">
-	<h1 class="text-2xl font-normal mb-2">> {title}</h1>
+	<div class="flex justify-between">
+		<h1 class="text-2xl font-normal mb-2">> {title}</h1>
+		<a href="https://github.com/AngelCMHxD/{repoName}">
+			<h1 class="text-2xl font-normal mb-2">[Repo]</h1>
+		</a>
+	</div>
 	<div class="w-full" is-="separator" variant-="background1"></div>
 	{#if !source}
 		<div class="m-8 w-full flex justify-center">Loading...</div>
