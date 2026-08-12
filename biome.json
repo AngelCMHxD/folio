@@ -24,15 +24,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"preset": "recommended",
-			"suspicious": {
-				"noUnknownAtRules": "off",
-				"noArrayIndexKey": "off"
-			},
-			"a11y": {
-				"noAutofocus": "off",
-				"useValidLang": "off"
-			}
+			"preset": "recommended"
 		},
 		"domains": {
 			"svelte": "all"
