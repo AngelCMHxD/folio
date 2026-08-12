@@ -5,6 +5,8 @@
 @import "@webtui/css/components/button.css";
 @import "@webtui/css/components/separator.css";
 @import "@webtui/css/components/popover.css";
+@import "@webtui/css/components/spinner.css";
+@import "@webtui/css/components/table.css";
 @import "@webtui/css/components/typography.css";
 
 @import "@webtui/theme-catppuccin";

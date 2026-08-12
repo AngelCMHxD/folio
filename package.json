@@ -31,6 +31,7 @@
 		"@inlang/paraglide-js-svelte": "^1.0.4",
 		"@webtui/css": "^0.1.9",
 		"@webtui/plugin-nf": "^0.1.2",
-		"@webtui/theme-catppuccin": "^0.0.5"
+		"@webtui/theme-catppuccin": "^0.0.5",
+		"svelte-marked": "^0.8.0"
 	}
 }

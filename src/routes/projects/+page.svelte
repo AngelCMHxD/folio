@@ -13,7 +13,7 @@ import { m } from "$lib/paraglide/messages";
 	<div class="w-full" is-="separator" variant-="background1"></div>
 
 	<div class="mb-8">
-		<h2 class="text-xl font-normal mb-2">
+		<h2 class="flex gap-3 text-xl font-normal mb-2">
 			{">"}
 			<a href="https://peekm2.angelcmh.com" class="hover:underline">
 				PeekM2
@@ -24,6 +24,9 @@ import { m } from "$lib/paraglide/messages";
 			>
 				(Repo)
 			</a>
+			<a href="/projects/peekm2" class="hover:underline">
+				({m.readme()})
+			</a>
 		</h2>
 		<p class="text-ctp-text break-normal">
 			{m.project1_desc()}
@@ -31,7 +34,7 @@ import { m } from "$lib/paraglide/messages";
 	</div>
 
 	<div class="mb-8">
-		<h2 class="text-xl font-normal mb-2">
+		<h2 class="flex gap-3 text-xl font-normal mb-2">
 			{">"}
 			<a href="https://chessnow.angelcmh.com" class="hover:underline">
 				Chess Now!
@@ -42,6 +45,9 @@ import { m } from "$lib/paraglide/messages";
 			>
 				(Repo)
 			</a>
+			<a href="/projects/chess-now" class="hover:underline">
+				({m.readme()})
+			</a>
 		</h2>
 		<p class="text-ctp-text break-normal">
 			{m.project2_desc()}
@@ -49,7 +55,7 @@ import { m } from "$lib/paraglide/messages";
 	</div>
 
 	<div class="mb-8">
-		<h2 class="text-xl font-normal mb-2">
+		<h2 class="flex gap-3 text-xl font-normal mb-2">
 			{">"}
 			<span> Easy Legendary! </span>
 			<a
@@ -57,6 +63,9 @@ import { m } from "$lib/paraglide/messages";
 				class="hover:underline"
 			>
 				(Repo)
+			</a>
+			<a href="/projects/easy-legendary" class="hover:underline">
+				({m.readme()})
 			</a>
 		</h2>
 		<p class="text-ctp-text break-normal">
