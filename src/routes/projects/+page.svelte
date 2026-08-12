@@ -4,6 +4,14 @@ import { goto } from "$app/navigation";
 import { m } from "$lib/paraglide/messages";
 </script>
 
+<svelte:head>
+	<title>Projects | Angel's folio</title>
+	<meta
+		name="description"
+		content="A small collection of some projects I've built, mostly as a hobby"
+	>
+</svelte:head>
+
 <div class="p-8">
 	<h1 class="text-2xl font-normal mb-2">
 		{">"}
