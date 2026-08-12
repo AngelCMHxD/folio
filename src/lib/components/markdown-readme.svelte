@@ -2,14 +2,23 @@
 import SvelteMarkdown from "svelte-marked";
 import { goto } from "$app/navigation";
 
-const { url, title } = $props();
+const { repoName, title } = $props();
 let source = $state("");
 
 $effect(() => {
-	fetch(url)
+	fetch(`https://api.github.com/repos/AngelCMHxD/${repoName}/readme`)
+		.then((res) => {
+			if (!res.ok) throw new Error(`Not Found: ${res.status}`);
+			return res.json();
+		})
+		.then((data) => fetch(data.download_url))
 		.then((res) => res.text())
-		.then((data) => {
-			source = data;
+		.then((markdownText) => {
+			source = markdownText;
+		})
+		.catch((err) => {
+			console.log(err);
+			source = `Failed to load README file\n\n${err.message}`;
 		});
 });
 </script>
