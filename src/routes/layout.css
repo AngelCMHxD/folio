@@ -14,6 +14,8 @@
 @import "@fontsource/jetbrains-mono";
 @import "@webtui/plugin-nf";
 
+@source "./src/routes"; /* without this tailwind doesn't apply to the error page, idk why */
+
 @theme {
 	--font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
 	--font-mono: "JetBrains Mono", monospace, "Symbols Nerd Font";

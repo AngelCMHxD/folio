@@ -13,5 +13,6 @@
 	"contact": "contacto",
 	"how_to_contact": "Cómo contactarme?",
 	"contact_text": "Mandame un MD a Discord! Mi username es {#code}{username}{/code}, y (casi siempre) estoy libre!{#space/}Solo dime que me conoces de mis proyectos en GitHub, sino podría pensar que es spam ;P",
-	"readme": "README.md [En inglés]"
+	"readme": "README.md [En inglés]",
+	"not_found": "Página no encontrada"
 }
