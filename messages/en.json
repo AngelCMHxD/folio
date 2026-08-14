@@ -15,5 +15,6 @@
 	"contact_text": "Just send me a DM on Discord! My username is {#code}{username}{/code}, and I'm always happy to chat!{#space/}Make sure to tell me you know me from my GitHub projects, otherwise I might think it's spam ;P",
 	"readme": "README.md",
 	"not_found": "Not Found",
-	"total_contributions": "Total contributions"
+	"total_contributions": "Total contributions",
+	"loading_calendar": "Loading GitHub calendar..."
 }

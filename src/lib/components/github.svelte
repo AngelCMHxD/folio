@@ -69,7 +69,7 @@ onMount(async () => {
 
 <div>
 	{#if loading}
-		<div>Loading...</div>
+		<div>{m.loading_calendar()}</div>
 	{:else}
 		<div>{m.total_contributions()}: {totalContributions}</div>
 		<div class="flex flex-col gap-0.5">
