@@ -1,6 +1,7 @@
 <script>
 import { ParaglideMessage } from "@inlang/paraglide-js-svelte";
 import { goto } from "$app/navigation";
+import Github from "$lib/components/github.svelte";
 import { m } from "$lib/paraglide/messages";
 </script>
 
@@ -46,6 +47,8 @@ import { m } from "$lib/paraglide/messages";
 		<li class="text-ctp-red"> Java</li>
 		<li class="text-ctp-blue"> Python</li>
 	</ul>
+
+	<Github />
 
 	<nav class="flex flex-col gap-4 mb-12">
 		<button
