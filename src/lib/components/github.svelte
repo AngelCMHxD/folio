@@ -42,7 +42,7 @@ onMount(async () => {
 		const startDayIndex = firstDate.getDay();
 
 		for (let i = 0; i < startDayIndex; i++) {
-			rows[days[i]].push({ count: 0, date: "", style: getCell(0) });
+			rows[days[i]].push({ count: 0, date: "", style: getCell(-1) });
 		}
 
 		data.contributions.forEach((contrib) => {
