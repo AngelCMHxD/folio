@@ -11,24 +11,26 @@ let { children } = $props();
 </script>
 
 <svelte:head><link rel="icon" href={favicon}></svelte:head>
-<div
-	class="max-w-3xl mx-auto mt-30 border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
->
-	<div class="flex bg-ctp-surface1 px-4 py-1 font-bold justify-between">
-		<span
-			>{page.url.pathname !== '/' ? `~/${page.url.pathname.slice(1)}` : '~'}</span
-		>
+<div class="flex items-center justify-center w-full min-h-screen">
+	<div
+		class="max-w-3xl mx-auto border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
+	>
+		<div class="flex bg-ctp-surface1 px-4 py-1 font-bold justify-between">
+			<span
+				>{page.url.pathname !== '/' ? `~/${page.url.pathname.slice(1)}` : '~'}</span
+			>
 
-		<LocaleSwitcher />
+			<LocaleSwitcher />
+		</div>
+		{@render children()}
 	</div>
-	{@render children()}
-</div>
 
-<div style="display:none">
-	{#each locales as locale (locale)}
-		<a
-			href={resolve(localizeHref(page.url.pathname, { locale }) as Pathname)}
-			>{locale}</a
-		>
-	{/each}
+	<div style="display:none">
+		{#each locales as locale (locale)}
+			<a
+				href={resolve(localizeHref(page.url.pathname, { locale }) as Pathname)}
+				>{locale}</a
+			>
+		{/each}
+	</div>
 </div>
