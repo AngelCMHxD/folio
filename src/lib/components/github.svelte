@@ -1,5 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
+import { m } from "$lib/paraglide/messages";
 
 let loading = $state(true);
 
@@ -70,7 +71,7 @@ onMount(async () => {
 	{#if loading}
 		<div>Loading...</div>
 	{:else}
-		<div>Total Contributions: {totalContributions}</div>
+		<div>{m.total_contributions()}: {totalContributions}</div>
 		<div class="flex flex-col gap-0.5">
 			{#each Object.entries(rows) as [day, row]}
 				<div class="flex gap-0.5">
