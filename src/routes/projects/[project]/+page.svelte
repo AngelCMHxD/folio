@@ -2,13 +2,12 @@
 import { page } from "$app/state";
 import MarkdownReadme from "$lib/components/markdown-readme.svelte";
 
-const projects: Record<
-	string,
-	{
-		name: string;
-		description: string;
-	}
-> = {
+type Project = {
+	name: string;
+	description: string;
+};
+
+const projects: Record<string, Project> = {
 	"chess-now": {
 		name: "Chess Now!",
 		description: "",
@@ -22,20 +21,23 @@ const projects: Record<
 		description: "",
 	},
 };
+
+let project: Project | undefined = $state(undefined);
+
+if (page.params.project) {
+	project = projects[page.params.project];
+}
 </script>
 
 <svelte:head>
-	<title>
-		{projects[page.params.project]?.name || page.params.project}
-		| Angel's folio
-	</title>
+	<title>{project?.name || page.params.project}| Angel's folio</title>
 	<meta
 		name="description"
-		content={projects[page.params.project]?.description || "Just a simple proyect"}
+		content={project?.description || "Just a simple proyect"}
 	>
 </svelte:head>
 
 <MarkdownReadme
-	title={projects[page.params.project]?.name || page.params.project}
+	title={project?.name || page.params.project}
 	repoName={page.params.project}
 />
