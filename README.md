@@ -6,7 +6,7 @@ This is my personal dev portfolio, designed to showcase some of my projects, my 
 
 It also uses [Svelte Marked/Markdown](https://github.com/ildella/svelte-marked) to render the packages READMEs inside of the page and [Paraglide](https://paraglidejs.com/) for i18n
 
-Production site is hosted using [Render](https://render.com/) over at https://angelcmh.com
+Production site is hosted using [Vercel](https://vercel.com/) over at https://angelcmh.com
 
 # Local dev
 
