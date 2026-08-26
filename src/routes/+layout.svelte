@@ -15,7 +15,9 @@ let { children } = $props();
 	<div
 		class="max-w-3xl mx-auto border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
 	>
-		<div class="flex bg-ctp-surface1 px-4 py-1 font-bold justify-between">
+		<div
+			class="flex bg-ctp-surface1 gap-6 px-4 py-1 font-bold justify-between"
+		>
 			<span
 				>{page.url.pathname !== '/' ? `~/${page.url.pathname.slice(1)}` : '~'}</span
 			>
