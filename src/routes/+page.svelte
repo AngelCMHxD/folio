@@ -14,29 +14,32 @@ import { m } from "$lib/paraglide/messages";
 </svelte:head>
 
 <div class="p-8">
-	<h1 class="text-2xl font-normal mb-4">
-		{">"}
-		<ParaglideMessage message={m.hello} inputs={{ name: "Angel" }}>
-			{#snippet style({ children })}
-				<span class="text-ctp-green font-bold"
-					>{@render children?.()}</span
-				>
-			{/snippet}
-		</ParaglideMessage>
-	</h1>
+	<div class="flex gap-4 items-center">
+		<img
+			src="https://avatars.githubusercontent.com/u/57822483"
+			alt="my avatar"
+			class="mb-1 w-64"
+		>
 
-	<img
-		src="https://avatars.githubusercontent.com/u/57822483"
-		alt="my avatar"
-		class="mb-1"
-	>
-
-	<div class="text-lg break-normal">
-		<ParaglideMessage message={m.intro} inputs={{}}>
-			{#snippet strong({ children })}
-				<strong> {@render children?.()} </strong>
-			{/snippet}
-		</ParaglideMessage>
+		<div>
+			<h1 class="text-2xl font-normal mb-4">
+				{">"}
+				<ParaglideMessage message={m.hello} inputs={{ name: "Angel" }}>
+					{#snippet style({ children })}
+						<span class="text-ctp-green font-bold"
+							>{@render children?.()}</span
+						>
+					{/snippet}
+				</ParaglideMessage>
+			</h1>
+			<div class="text-lg break-normal">
+				<ParaglideMessage message={m.intro} inputs={{}}>
+					{#snippet strong({ children })}
+						<strong> {@render children?.()} </strong>
+					{/snippet}
+				</ParaglideMessage>
+			</div>
+		</div>
 	</div>
 
 	<p class="text-lg leading-relaxed mt-8">{m.languages_known()}</p>
@@ -50,7 +53,7 @@ import { m } from "$lib/paraglide/messages";
 
 	<Github />
 
-	<nav class="flex flex-col gap-4 mb-12">
+	<nav class="flex flex-col gap-2 mb-6">
 		<button
 			type="button"
 			tabindex="-1"
