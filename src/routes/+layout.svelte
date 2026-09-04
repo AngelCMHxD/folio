@@ -11,7 +11,7 @@ let { children } = $props();
 </script>
 
 <svelte:head><link rel="icon" href={favicon}></svelte:head>
-<div class="flex items-center justify-center w-full min-h-screen">
+<div class="flex items-center justify-center w-full min-h-screen p-6">
 	<div
 		class="max-w-3xl mx-auto border-2 border-ctp-surface1 shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
 	>
