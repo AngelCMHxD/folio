@@ -14,7 +14,7 @@ import { m } from "$lib/paraglide/messages";
 </svelte:head>
 
 <div class="p-8">
-	<div class="flex gap-4 items-center">
+	<div class="flex gap-4 items-center flex-col md:flex-row">
 		<img
 			src="https://avatars.githubusercontent.com/u/57822483"
 			alt="my avatar"
