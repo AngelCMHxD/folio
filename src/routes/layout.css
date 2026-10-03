@@ -15,11 +15,20 @@
 @import "@fontsource/jetbrains-mono";
 @import "@webtui/plugin-nf";
 
+
+:root {
+	--font-family: "JetBrains Mono", "Symbols Nerd Font", monospace;
+}
+
+html,
+body {
+	font-family: var(--font-family);
+}
+
 @source "./src/routes"; /* without this tailwind doesn't apply to the error page, idk why */
 
 @theme {
-	--font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
-	--font-mono: "JetBrains Mono", monospace, "Symbols Nerd Font";
+	--font-mono: var(--font-family);
 
 	--animate-blink: blink 1s infinite step-start;
 
